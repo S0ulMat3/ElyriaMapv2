@@ -1,3 +1,3 @@
 steps:
-  - name: eu.gcr.io/elyria-203618/quickstart-image
-    args: ["-m", "rsync", "-r", "-c", "-d", ".", "gs://www.elyriamap.com"]
+  - name: eu.gcr.io/cloud-builders/gsutil
+    args: ["-m", "rsync", "-r", "-c", "-d", ".", "gs://elyriamap.com"]
